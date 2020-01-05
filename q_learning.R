@@ -326,8 +326,3 @@ length_opt_greedy_right = QLearning(Q,epsilon=0,demand,shortest_path,TRUE)
 
 #plot
 PlotLengths(length_eps_greedy,length_opt_greedy,length_heuristic,length_opt_greedy_right,r=10)
-
-x=1:15000
-eps = 0.2*((1/x)^(0.15))
-learning_rate = ((1/x)^(0.15))
-plot(x,learning_rate,type='l',xlab='demand',ylab='learning rate')
